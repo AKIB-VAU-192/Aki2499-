@@ -27,7 +27,7 @@ const platforms = {
     regex: /(?:https?:\/\/)?(?:www\.)?tiktok\.com/,
     endpoint: "/nazrul/tikDL?url=",
   },
-  Facebook: {
+  𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤: {
     regex: /(?:https?:\/\/)?(?:www\.)?(facebook\.com|fb\.watch|facebook\.com\/share\/v)/,
     endpoint: "/nazrul/fbDL?url=",
   },
