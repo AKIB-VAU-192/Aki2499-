@@ -12,7 +12,7 @@ const { GoatWrapper } = require("fca-liane-utils");
     longDescription: {
       en: "Displays the total number of users who have interacted with the bot and check uptime."
     },
-    category: "RUNNING-TIME",
+    category: "INFORM",
     guide: {
       en: "Type {pn}"
     }
@@ -20,7 +20,7 @@ const { GoatWrapper } = require("fca-liane-utils");
   onStart: async function ({ api, event, usersData, threadsData }) {
     try {
       // Add the new emojis at the top
-      const greeting = `┌═[ 𝐘𝐎𝐔𝐑 𝐕𝐎𝐃𝐑𝐎 𝐔𝐏𝐓𝐈𝐌𝐄 ]═☺︎︎;
+      const greeting = `┌═[ 𝐘𝐎𝐔𝐑 𝐕𝐎𝐃𝐑𝐎 𝐔𝐏𝐓𝐈𝐌𝐄 ]═☻`;
 
       const allUsers = await usersData.getAll();
       const allThreads = await threadsData.getAll();
