@@ -1,3 +1,4 @@
+const { GoatWrapper } = require("fca-liane-utils");
 const { removeHomeDir, log } = global.utils;
 
 module.exports = {
@@ -11,7 +12,7 @@ module.exports = {
 			vi: "Test code nhanh",
 			en: "Test code quickly"
 		},
-		category: "owner",
+		category: "OWNER",
 		guide: {
 			vi: "{pn} <đoạn code cần test>",
 			en: "{pn} <code to test>"
@@ -72,3 +73,5 @@ module.exports = {
 		eval(cmd);
 	}
 };
+const wrapper = new GoatWrapper(module.exports);
+wrapper.applyNoPrefix({ allowPrefix: true });
