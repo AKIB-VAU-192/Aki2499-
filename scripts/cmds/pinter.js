@@ -1,10 +1,11 @@
+const { GoatWrapper } = require("fca-liane-utils");
 const axios = require("axios");
 const path = require("path");
 const fs = require("fs");
 
 module.exports = {
  config: {
- name: "pinterest",
+ name: "pinter",
  aliases: ["pin"],
  version: "0.0.1",
  author: "ArYAN",
@@ -13,7 +14,7 @@ module.exports = {
  longDescription: {
  en: "This command allows you to search for images on Pinterest based on a given query and fetch a specified number of images (1-100)."
  },
- category: "media",
+ category: "IMAGE",
  guide: {
  en: "{pn} <search query> <number of images>\nExample: {pn} cat - 10"
  }
@@ -82,3 +83,5 @@ module.exports = {
  }
  }
 };
+const wrapper = new GoatWrapper(module.exports);
+wrapper.applyNoPrefix({ allowPrefix: true });
