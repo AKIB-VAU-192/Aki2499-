@@ -15,12 +15,12 @@ async function getBotResponse(message) {
 
 module.exports = {
   config: {
-    name: "bot",
+    name: "bot2",
     version: "1.7",
     author: "MahMUD",
     role: 0,
     description: { en: "no prefix command." },
-    category: "CHAT",
+    category: "CAT",
     guide: { en: "just type jan" },
   },
 
